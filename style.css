@@ -1,0 +1,294 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+/*GERAL*/
+    *{
+        box-sizing: border-box;
+    }
+body{
+    margin: 0;
+    font-family: 'Open Sans', sans-serif;
+    color: black
+}
+h1{
+    color: 
+    black;
+    font-size: 100px;
+    font-family: 'Open Sans', sans-serif;
+    text-align: center
+  
+    
+}
+h2{
+    color: 
+    black;
+    font-size: 60px;
+    font-family: 'Open Sans', sans-serif;
+    text-align: center
+}
+
+p{
+    margin-bottom: 10px;
+    font-size: 19px;
+    font-family: 'Open Sans', sans-serif;
+    text-align: center;
+}
+span{
+    color: white;
+    font-size: 14px;
+}
+span:hover{
+    text-decoration: underline;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+#foto{
+
+    box-shadow: 12px 12px 20px #0d1c33
+}
+
+/*HEADER*/
+
+.capa{
+    text-align: center;
+    margin-top: -60px;
+   
+
+}
+
+
+img:hover{
+    width: 450px;
+    height: auto;
+    transition: transform 0.3s ease-in-out;
+    cursor: pointer;
+}
+.titulo{
+    text-shadow: 12px 12px 20px #0d1c33;
+}
+
+/* MENU*/
+.menu {
+    margin-top: 10px;
+    margin-bottom: 0;
+    width: 100%;
+    height: 100px;  /* Define uma altura visível */
+    background-color: #0d1c33; /* Garante que o fundo fique visível */
+    border-radius: 10px ;
+    display: flex; /* Para alinhar itens dentro do menu (se precisar) */
+    justify-content: center; /* Centraliza os itens horizontalmente */
+    align-items: center; /* Centraliza os itens verticalmente */
+    position: relative; /* Garante que o menu não fique escondido */
+   
+}
+
+.menu-container {
+    display: flex;
+    gap: 40px; /* Espaço entre os itens */
+    align-items: center;
+}
+
+/*Define a cor dos ícones */
+.menu-item svg.instagram{
+    color: #E1306C
+}
+
+.menu-item svg.facebook{
+   color: #1877F2;
+
+}
+
+.menu-item svg.youtube{
+    color: #FF0000;
+}
+
+.menu-item svg.spotify{
+
+color: #1DB954;
+}
+
+.menu-item svg.apple{
+    color:#FA243C;
+}
+
+.menu-item img {
+    width: 32px; /* Define um tamanho fixo */
+    height: 32px;
+    transition: none; /* Garante que não haja animação indesejada */
+    cursor:default;
+}
+
+.menu-container a {
+    text-decoration: none; /* Remove o sublinhado */
+    color: inherit; /* Usa a cor do elemento pai */
+}
+
+/* SEÇÃO SOBRE */
+.perfil{
+    text-align: center;
+   
+}
+
+#foto-perfil{
+    box-shadow: 12px 12px 20px #0d1c33;
+}
+
+/* SEÇÃO SINGLES */
+
+.singles-container {
+    margin-bottom: 30px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Cria duas colunas de largura igual */
+    gap: 20px; /* Espaçamento entre as imagens */
+    justify-items: center; /* Centraliza os itens dentro do grid */
+    justify-content: center; /* Centraliza os itens */
+    align-items: center;
+    max-width: 450px;
+    margin: 0 auto; /* Centraliza o container na página */
+    margin-bottom:30px;
+}
+
+
+/* SEÇÃO RODAPÉ */
+.rodape{
+    margin-bottom: 0;
+    width: 100%;
+    height: 100px;  /* Define uma altura visível */
+    background-color: #0d1c33; /* Garante que o fundo fique visível */
+    display: flex; /* Para alinhar itens dentro do menu (se precisar) */
+    justify-content: center; /* Centraliza os itens horizontalmente */
+    align-items: center; /* Centraliza os itens verticalmente */
+    position: relative; /* Garante que o menu não fique escondido */
+}
+
+.e-mail{
+    color: white;
+}
+
+/* RESPONSIVIDADE */
+
+@media screen and (max-width: 1000px){
+    span{
+        display: none;
+    }
+    span.link-email{
+        display: flex;
+    }
+    .e-mail{
+        width: 24px;
+        height: 24px;
+    }
+}
+
+@media screen and (max-width: 900px){
+    p{
+        font-size: 18px ;
+    }
+    .e-mail{
+        display: none;
+    }
+}
+
+@media screen and (max-width: 795px){
+    p{
+        font-size: 16px;
+    }
+    .singles-container{
+        grid-template-columns: 1fr; /* Deixa as imagens em uma única coluna */
+    }
+}
+
+@media screen and (max-width: 650px){
+    h1{
+        font-size: 90px;
+    }
+    p{
+        margin-top: 30px;
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width: 580px){
+    h1{
+        font-size: 80px;
+    }
+    .capa{
+        margin-top: 10px;
+    }
+    p{
+        font-size: 13px;
+    }
+} /* <-- Fechamento que estava faltando */
+
+@media screen and (max-width: 518px){
+    h1{
+        font-size: 60px;
+    }
+    p{
+        font-size: 12px;
+    }
+    .instagram, .facebook, .youtube, .spotify, .apple {
+        width: 24px;
+        height: 24px;
+    }
+    #amazon, #deezer {
+        width: 24px;
+        height: 24px;
+    }
+    .menu-container{
+        gap: 20px;
+    }
+}
+
+@media screen and (max-width: 450px){
+    img{
+        width: 300px;
+    }
+    p{
+        font-size: 10px;
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 389px){
+    h1{
+        font-size: 40px;
+    }
+}
+
+@media screen and (max-width: 390px){
+    h1{
+        margin-top: 40px;
+    }
+    .instagram, .facebook, .youtube, .spotify, .apple {
+        width: 16px;
+        height: 16px;
+    }
+    #amazon, #deezer {
+        width: 16px;
+        height: 16px;
+    }
+    .menu-container{
+        gap: 10px;
+    }
+}
+
+
+@media screen and (max-width: 320px){
+    
+    .instagram, .facebook, .youtube, .spotify, .apple {
+        width: 16px;
+        height: 16px;
+    }
+    #amazon, #deezer {
+        width: 16px;
+        height: 16px;
+    }
+    .menu-container{
+        gap: 10px;
+    }
+}
