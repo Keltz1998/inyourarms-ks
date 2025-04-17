@@ -173,8 +173,10 @@ color: #1DB954;
 
 @media screen and (max-width: 1000px){
     span{
-        display: none;
+
+      font-size: 10px;
     }
+   
     span.link-email{
         display: flex;
     }
