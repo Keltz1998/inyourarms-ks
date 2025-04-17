@@ -184,6 +184,9 @@ color: #1DB954;
         width: 24px;
         height: 24px;
     }
+   .menu-container{
+        gap: 20px;
+    }
 }
 
 @media screen and (max-width: 900px){
